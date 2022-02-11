@@ -8,5 +8,21 @@
 <h1 style="font-family:verdana;">This is a Heading</h1>
 <p>This is a paragraph.</p>
 
+  <p><center>Last Modified <script>document.write( document.lastModified );</script></center></p>
+This is the code that we tried in class this morning: 
+<p id="demo"></p>
+
+<script>
+const date = new Date(document.lastModified);
+document.getElementById("demo").innerHTML = date;
+</script>
+This is a code my team member tried:
+<b>Last Modified:</b><b id="demo"></b>
+<script>
+const date = new Date(document.lastModified);
+document.getElementById("demo").innerHTML = date;
+</script>
+
+
 </body>
 </html>
